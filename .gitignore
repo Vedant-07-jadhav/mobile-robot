@@ -1,3 +1,11 @@
+.vscode/
+.idea/
+.ros/
+.catkin_workspace
+.rosinstall
+.rosinstall_generator
+.rosdep
+build/
 devel/
 logs/
 build/

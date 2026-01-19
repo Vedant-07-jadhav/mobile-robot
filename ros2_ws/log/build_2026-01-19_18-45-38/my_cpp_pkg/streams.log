@@ -1,0 +1,55 @@
+[0.009s] Invoking command in '/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/src/my_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg
+[0.076s] -- The C compiler identification is GNU 13.3.0
+[0.138s] -- The CXX compiler identification is GNU 13.3.0
+[0.157s] -- Detecting C compiler ABI info
+[0.258s] -- Detecting C compiler ABI info - done
+[0.265s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.265s] -- Detecting C compile features
+[0.265s] -- Detecting C compile features - done
+[0.278s] -- Detecting CXX compiler ABI info
+[0.387s] -- Detecting CXX compiler ABI info - done
+[0.395s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.395s] -- Detecting CXX compile features
+[0.396s] -- Detecting CXX compile features - done
+[0.399s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.532s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.651s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.695s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.710s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.726s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.745s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.831s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.834s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.939s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.960s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.981s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.047s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.149s] -- Configuring done (1.1s)
+[1.156s] -- Generating done (0.0s)
+[1.158s] -- Build files have been written to: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg
+[1.167s] Invoked command in '/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/src/my_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg
+[1.168s] Invoking command in '/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg -- -j12 -l12
+[1.231s] [ 50%] [32mBuilding CXX object CMakeFiles/cmd_vel_publisher.dir/src/cmd_vel_publisher.cpp.o[0m
+[4.346s] [100%] [32m[1mLinking CXX executable cmd_vel_publisher[0m
+[4.496s] [100%] Built target cmd_vel_publisher
+[4.505s] Invoked command in '/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg -- -j12 -l12
+[4.516s] Invoking command in '/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg
+[4.524s] -- Install configuration: ""
+[4.524s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cmd_vel_publisher
+[4.525s] -- Set non-toolchain portion of runtime path of "/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cmd_vel_publisher" to ""
+[4.525s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[4.525s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[4.526s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[4.527s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[4.527s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[4.527s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[4.527s] -- Installing: /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[4.528s] Invoked command in '/home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vedant/Code/AI_ML_RL_RO/mobile-robot/ros2_ws/build/my_cpp_pkg
