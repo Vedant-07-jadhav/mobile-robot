@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="default">
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+
+    <!-- Ground -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>10 10</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>10 10</size>
+            </plane>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Quadruped -->
+    <model name="quadruped">
+      <pose>0 0 0.25 0 0 0</pose>
+
+      <!-- Body -->
+      <link name="body">
+        <inertial>
+          <mass>5</mass>
+          <inertia>
+            <ixx>0.1</ixx><iyy>0.1</iyy><izz>0.1</izz>
+          </inertia>
+        </inertial>
+
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.4 0.2 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.4 0.2 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Macro-style legs (FL, FR, RL, RR) -->
+
+      <!-- Front Left -->
+      <link name="leg_fl">
+        <pose>0.15 0.1 -0.15 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <joint name="hip_fl" type="revolute">
+        <parent>body</parent>
+        <child>leg_fl</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.0</lower>
+            <upper>1.0</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <!-- Front Right -->
+      <link name="leg_fr">
+        <pose>0.15 -0.1 -0.15 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <joint name="hip_fr" type="revolute">
+        <parent>body</parent>
+        <child>leg_fr</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.0</lower>
+            <upper>1.0</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <!-- Rear Left -->
+      <link name="leg_rl">
+        <pose>-0.15 0.1 -0.15 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <joint name="hip_rl" type="revolute">
+        <parent>body</parent>
+        <child>leg_rl</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.0</lower>
+            <upper>1.0</upper>
+          </limit>
+        </axis>
+      </joint>
+
+      <!-- Rear Right -->
+      <link name="leg_rr">
+        <pose>-0.15 -0.1 -0.15 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <joint name="hip_rr" type="revolute">
+        <parent>body</parent>
+        <child>leg_rr</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.0</lower>
+            <upper>1.0</upper>
+          </limit>
+        </axis>
+      </joint>
+
+    </model>
+  </world>
+</sdf>
